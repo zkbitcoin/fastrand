@@ -75,10 +75,10 @@ use std::hash::{Hash, Hasher};
 use std::ops::{Bound, RangeBounds};
 use std::thread;
 
-#[cfg(all(target_arch = "wasm32", not(target_os = "wasi")))]
+//#[cfg(all(target_arch = "wasm32", not(target_os = "wasi")))]
 use instant::Instant;
-#[cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))]
-use std::time::Instant;
+//#[cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))]
+//use std::time::Instant;
 
 /// A random number generator.
 #[derive(Debug, PartialEq, Eq)]
